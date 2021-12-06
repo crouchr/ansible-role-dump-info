@@ -1,0 +1,32 @@
+---
+  - name: Retrieve hostvars magic variable contents
+    debug:
+      var=hostvars[inventory_hostname]
+
+#  - name: Display all variables/facts known for a host
+#    ansible.builtin.debug:
+#      var: hostvars['ans-host-1']
+#      verbosity: 4
+
+#  - name: Get uptime information
+#    ansible.builtin.shell: /usr/bin/uptime
+#    register: result
+
+#  - name: Print all available facts
+#    ansible.builtin.debug:
+#      var: ansible_facts
+#  - debug:
+#      msg: "{{ ansible_hostname }}:{{ ansible_default_ipv4.address }}"
+#    when: "'slackware' in group_names"
+
+#  - debug:
+#      msg: "{{ ansible_hostname }}:{{ ansible_default_ipv4.address }}"
+#    when:  "'slackware' in group_names"
+#
+#  - debug:
+#      msg: "{{ ansible_hostname }}:{{ ansible_eth1.ipv4.address }}"
+#    when:  "'slackware' in group_names"
+#
+#  - debug:
+#      msg: "{{ ansible_hostname }}:{{ ansible_host }}"
+#    when:  "'slackware' in group_names"

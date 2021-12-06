@@ -1,0 +1,15 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: dump-info
+  author: crouchr
+  description: Dump host info.
+  company: "BlackRain"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.9
+  platforms:
+    - name: Slackware
+    - name: Debian
+
+
